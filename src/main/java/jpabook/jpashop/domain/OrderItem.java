@@ -1,7 +1,9 @@
 package jpabook.jpashop.domain;
 
 import jpabook.jpashop.domain.item.Item;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -9,6 +11,9 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+// 빈 생성자 pretected 로 정의한 것과 같은 효과
+// 다른 곳에서 빈 생성자를 만들지 못함
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class OrderItem {
     @Id
     @GeneratedValue

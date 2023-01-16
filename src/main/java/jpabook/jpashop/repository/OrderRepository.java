@@ -5,8 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.swing.text.html.parser.Entity;
-import java.util.List;
 
 @Repository
 @RequiredArgsConstructor
