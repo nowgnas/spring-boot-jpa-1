@@ -23,6 +23,9 @@ dependencies {
 	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
 	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.31'
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.7.7'
+
 }
 
 tasks.named('test') {
